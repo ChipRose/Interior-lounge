@@ -304,3 +304,15 @@ body {
   max-width: 30px;
   max-height: 30px;
 }
+
+/* Form */
+
+.feedback-form .wpcf7-text {
+  border: 1px solid var(--cl-decorate-accent);
+  border-radius: 8px;
+}
+
+.feedback-form .wpcf7-textarea {
+  border: 1px solid var(--cl-decorate-accent);
+  border-radius: 8px;
+}
