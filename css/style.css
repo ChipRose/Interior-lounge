@@ -217,12 +217,10 @@ body {
 /* Feedback */
 
 .feedback {
-  padding: 25px 0 0 0;
   background-color: var(--cl-bg-form);
 }
 
 .feedback__form-block {
-  padding: 56px 0;
   border-bottom: 1px solid var(--cl-decorate-accent);
 }
 
@@ -236,6 +234,10 @@ body {
   line-height: var(--lh-subtitle);
   font-weight: 500;
   color: var(--cl-brown-light);
+}
+
+.reviews-form {
+  padding: 81px 0 32px;
 }
 
 /* Form */
@@ -281,6 +283,7 @@ body {
 /* Form button */
 
 .wpcf7-form__row-submit {
+  margin-bottom: 24px;
   display: flex;
   align-items: center;
 }
@@ -318,10 +321,17 @@ body {
   line-height: var(--lh-remark);
 }
 
+.feedback__review {
+  margin-bottom: 32px;
+}
+
 /* Reviews */
 
+.reviews {
+  padding: 56px 0;
+}
+
 .review {
-  margin-bottom: 32px;
   display: grid;
   grid-template-rows: min-content auto;
   grid-template-columns: 50px auto;
