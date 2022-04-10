@@ -79,36 +79,48 @@
         </div>
       </div>
     </section>
+
     <section class="feedback">
       <div class="wrapper">
-        <h2 class="feedback__title">
-          Оставить отзыв
-        </h2>
-        <div class="feedback-form">
-          <div class="wpcf7">
-            <form class="wpcf7-form" method="post" action="#" autocomplete="off" enctype="multipart/form-data">
-              <div class="wpcf7-form__wrapper">
-                <div class="wpcf7-form__row">
-                  <span>
-                    <textarea class="wpcf7-textarea" id="comment-message" name="comment-message"
-                      placeholder="Ваш отзыв"></textarea>
-                  </span>
+        <div class="feedback__form-block">
+          <h2 class="feedback__title">
+            Оставить отзыв
+          </h2>
+          <div class="feedback-form">
+            <div class="wpcf7">
+              <form class="wpcf7-form" method="post" action="#" autocomplete="off" enctype="multipart/form-data">
+                <div class="wpcf7-form__wrapper">
+                  <div class="wpcf7-form__row">
+                    <span>
+                      <textarea class="wpcf7-textarea" id="comment-message" name="comment-message"
+                        placeholder="Расскажите, что вы думаете о проекте"></textarea>
+                    </span>
+                  </div>
+                  <div class="wpcf7-form__row">
+                    <span>
+                      <input class="wpcf7-text" type="text" placeholder="Ваше имя">
+                    </span>
+                  </div>
+                  <div class="wpcf7-form__row-submit">
+                    <div class="wpcf7__submit-button">
+                      <span>
+                        <input class="wpcf7-submit" value="Отправить" type="submit">
+                      </span>
+                    </div>
+                    <div class="wpcf7__submit-text">
+                      <div class="wpcf7-response-output">
+                        <p>
+                          Отзыв будет добавлен после проверки модератором
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="wpcf7-form__row">
-                  <span>
-                    <input class="wpcf7-text" type="text" placeholder="Ваше имя">
-                  </span>
-                </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    
-    <section class="reviews">
-      <div class="wrapper">
-        <div class="reviews__wrapper">
+        <div class="reviews feedback__form-block">
           <div class="review">
             <div class="review__image-wrapper">
               <picture>
