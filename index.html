@@ -79,16 +79,45 @@
         </div>
       </div>
     </section>
-    <section class="form">
-      <div class="wrapper">
-        <!-- Comment form -->
-      </div>
-    </section>
 
-    <section class="reviews">
+    <section class="feedback">
       <div class="wrapper">
-        <div class="reviews__wrapper">
-          <div class="review">
+        <div class="reviews-form feedback__form-block">
+          <h2 class="feedback__title">
+            Оставить отзыв
+          </h2>
+          <div class="feedback-form">
+            <div class="wpcf7">
+              <form class="wpcf7-form" method="post" action="#" autocomplete="off" enctype="multipart/form-data">
+                <div class="wpcf7-form__wrapper">
+                  <p>
+                    <span class="wpcf7-form-control-wrap">
+                      <textarea class="wpcf7-textarea" id="comment-message" name="comment-message"
+                        placeholder="Расскажите, что вы думаете о проекте"></textarea>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="wpcf7-form-control-wrap">
+                      <input class="wpcf7-text" type="text" placeholder="Ваше имя">
+                    </span>
+                  </p>
+                  <div class="feedback-form__submit-area">
+                    <p>
+                      <span>
+                        <input class="wpcf7-submit" value="Отправить" type="submit">
+                      </span>
+                    </p>
+                    <div class="feedback-form__submit-text">
+                      Отзыв будет добавлен после проверки модератором
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="reviews feedback__form-block">
+          <div class="review feedback__review">
             <div class="review__image-wrapper">
               <picture>
                 <img class="review__image" src="img/avatar/ivan.png" srcset="img/avatar/ivan@2x.png 2x" width="50"
@@ -102,7 +131,7 @@
               Очень самобытный и необычный проект.
             </p>
           </div>
-          <div class="review">
+          <div class="review feedback__review">
             <div class="review__image-wrapper">
               <picture>
                 <img class="review__image" src="img/avatar/maria.png" srcset="img/avatar/maria@2x.png 2x" width="50"
@@ -117,7 +146,7 @@
               Кружки вообще очень стильные!
             </p>
           </div>
-          <div class="review">
+          <div class="review feedback__review">
             <div class="review__image-wrapper">
               <picture>
                 <img class="review__image" src="img/avatar/svetlana.jpg" srcset="img/avatar/svetlana@2x.jpg 2x"

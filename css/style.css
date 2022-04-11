@@ -12,6 +12,8 @@
   --lh-quote: 1.5;
   --fz-review-name: 14px;
   --lh-review-name: 1.5;
+  --fz-remark: 12px;
+  --lh-remark: 1.5;
 
   /* Colors */
   --cl-main: rgb(0, 0, 0);
@@ -24,6 +26,7 @@
   --cl-bg-main: rgb(255, 253, 248);
   --cl-bg-accent: rgb(255, 255, 255);
   --cl-bg-form: rgb(244, 239, 226);
+  --cl-placeholder: rgba(0, 0, 0, 0.3);
 }
 
 @font-face {
@@ -87,10 +90,12 @@ body {
 /* Main page */
 
 .page-main {
-  padding: 70px 0;
+  padding: 70px 0 0 0;
   flex: 1 1 auto;
   background-color: var(--cl-bg-main);
 }
+
+/* Wysiwyg */
 
 /* Titles */
 
@@ -209,15 +214,136 @@ body {
   margin-bottom: 0;
 }
 
+/* Feedback */
+
+.feedback {
+  background-color: var(--cl-bg-form);
+}
+
+.feedback__form-block {
+  border-bottom: 1px solid var(--cl-decorate-accent);
+}
+
+.feedback__form-block:last-child {
+  border-bottom: none;
+}
+
+.feedback__title {
+  margin: 0 0 32px 0;
+  font-size: var(--fz-subtitle);
+  line-height: var(--lh-subtitle);
+  font-weight: 500;
+  color: var(--cl-brown-light);
+}
+
+.reviews-form {
+  padding: 81px 0 32px;
+}
+
+/* Form */
+
+.wpcf7-text {
+  padding: 16px;
+  margin-bottom: 24px;
+  box-sizing: border-box;
+  border: 1px solid var(--cl-decorate-accent);
+  border-radius: 8px;
+}
+
+.feedback-form .wpcf7-text {
+  width: 49%;
+  height: 64px;
+}
+
+.wpcf7-textarea {
+  padding: 16px;
+  margin-bottom: 24px;
+  width: 100%;
+  resize: none;
+  box-sizing: border-box;
+  border: 1px solid var(--cl-decorate-accent);
+  border-radius: 8px;
+}
+
+.feedback-form .wpcf7-textarea {
+  height: 160px;
+}
+
+.wpcf7-text::placeholder,
+.wpcf7-textarea::placeholder {
+  font-family: "Montserrat", "Helvetica", sans-serif;
+  color: var(--cl-placeholder);
+  opacity: 1;
+}
+
+.wpcf7-text:focus,
+.wpcf7-textarea:focus {
+  border: 1px solid var(--cl-brown-light);
+  box-shadow: 0 4px 4px 0 var(--cl-decorate-accent03) inset;
+  outline: none;
+}
+
+.feedback-form p {
+  margin: 0;
+}
+
+.feedback-form .wpcf7-form-control-wrap {
+  display: block;
+  font-size: 0;
+  line-height: 1;
+}
+
+/* Form button */
+
+.feedback-form__submit-area {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.feedback-form .wpcf7-submit {
+  padding: 19px 19px 18px;
+  min-width: 285px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--cl-brown-light);
+  color: var(--cl-main-contrast);
+  transition: background-color 0.3s ease-in;
+}
+
+.feedback-form .wpcf7-submit:hover {
+  background-color: var(--cl-brown-middle);
+}
+
+.feedback-form .wpcf7-submit:active {
+  background-color: var(--cl-brown-dark);
+}
+
+.feedback-form__submit-text {
+  margin: 0 0 0 16px;
+  max-width: 225px;
+  font-size: var(--fz-remark);
+  line-height: var(--lh-remark);
+}
+
+.feedback__review {
+  margin-bottom: 32px;
+}
+
 /* Reviews */
 
+.reviews {
+  padding: 56px 0;
+}
+
 .review {
-  margin-bottom: 32px;
   display: grid;
   grid-template-rows: min-content auto;
   grid-template-columns: 50px auto;
   column-gap: 24px;
 }
+
 .review__image-wrapper {
   width: 50px;
   height: 50px;
