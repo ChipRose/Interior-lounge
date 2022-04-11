@@ -242,54 +242,61 @@ body {
 
 /* Form */
 
-.feedback-form .wpcf7-text {
+.wpcf7-text {
   padding: 16px;
-  width: 49%;
-  height: 64px;
   box-sizing: border-box;
   border: 1px solid var(--cl-decorate-accent);
   border-radius: 8px;
 }
 
-.feedback-form .wpcf7-textarea {
+.feedback-form .wpcf7-text {
+  width: 49%;
+  height: 64px;
+}
+
+.wpcf7-textarea {
   padding: 16px;
   width: 100%;
-  height: 160px;
   resize: none;
   box-sizing: border-box;
   border: 1px solid var(--cl-decorate-accent);
   border-radius: 8px;
 }
 
-.feedback-form .wpcf7-text::placeholder,
-.feedback-form .wpcf7-textarea::placeholder {
+.feedback-form .wpcf7-textarea  {
+  height: 160px;
+}
+
+.wpcf7-text::placeholder,
+.wpcf7-textarea::placeholder {
   font-family: "Montserrat", "Helvetica", sans-serif;
   color: var(--cl-placeholder);
   opacity: 1;
 }
 
-.feedback-form .wpcf7-text:focus,
-.feedback-form .wpcf7-textarea:focus {
+.wpcf7-text:focus,
+.wpcf7-textarea:focus {
   border: 1px solid var(--cl-brown-light);
   box-shadow: 0 4px 4px 0 var(--cl-decorate-accent03) inset;
-
   outline: none;
 }
 
-.wpcf7-form__row {
-  margin-bottom: 24px;
+.feedback-form p {
+  margin: 0 0 24px;
+}
+
+.feedback-form .wpcf7-form-control-wrap {
+  display: block;
+  font-size: 0;
+  line-height: 1;
 }
 
 /* Form button */
 
-.wpcf7-form__row-submit {
-  margin-bottom: 24px;
+.feedback-form__submit-area {
+  /* margin-bottom: 24px; */
   display: flex;
   align-items: center;
-}
-
-.wpcf7__submit-button {
-  margin-right: 16px;
 }
 
 .feedback-form .wpcf7-submit {
@@ -311,12 +318,9 @@ body {
   background-color: var(--cl-brown-dark);
 }
 
-.feedback-form .wpcf7__submit-text {
+.feedback-form__submit-text {
+  margin: 0 0 0 16px;
   max-width: 225px;
-}
-
-.feedback-form .wpcf7-response-output p {
-  margin: 0;
   font-size: var(--fz-remark);
   line-height: var(--lh-remark);
 }
