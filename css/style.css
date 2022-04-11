@@ -244,6 +244,7 @@ body {
 
 .wpcf7-text {
   padding: 16px;
+  margin-bottom: 24px;
   box-sizing: border-box;
   border: 1px solid var(--cl-decorate-accent);
   border-radius: 8px;
@@ -256,6 +257,7 @@ body {
 
 .wpcf7-textarea {
   padding: 16px;
+  margin-bottom: 24px;
   width: 100%;
   resize: none;
   box-sizing: border-box;
@@ -263,7 +265,7 @@ body {
   border-radius: 8px;
 }
 
-.feedback-form .wpcf7-textarea  {
+.feedback-form .wpcf7-textarea {
   height: 160px;
 }
 
@@ -282,7 +284,7 @@ body {
 }
 
 .feedback-form p {
-  margin: 0 0 24px;
+  margin: 0;
 }
 
 .feedback-form .wpcf7-form-control-wrap {
@@ -294,7 +296,7 @@ body {
 /* Form button */
 
 .feedback-form__submit-area {
-  /* margin-bottom: 24px; */
+  margin-bottom: 24px;
   display: flex;
   align-items: center;
 }
