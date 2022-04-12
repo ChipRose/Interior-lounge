@@ -1,3 +1,5 @@
+@import '~normalize.css';
+
 :root {
   /* Fonts */
   --fz-main-text: 18px;
