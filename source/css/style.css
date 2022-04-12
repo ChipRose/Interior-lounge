@@ -1,4 +1,4 @@
-@import '~normalize.css';
+@import "~normalize.css";
 
 :root {
   /* Fonts */
@@ -143,13 +143,8 @@ body {
 .wyziwyg-wrapper ul,
 .wyziwyg-wrapper ol {
   padding-left: 0;
+  margin: 0 0 32px;
   list-style: none;
-}
-
-.wyziwyg-wrapper ul,
-.wyziwyg-wrapper ol {
-  margin-top: 0;
-  margin-bottom: 32px;
 }
 
 .wyziwyg-wrapper ul li,
