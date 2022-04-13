@@ -140,17 +140,17 @@ body {
   display: block;
 }
 
-.menu-item--styled {
+.menu-primary-container .menu-item--styled {
   border: 1px solid var(--cl-brown-light);
   border-radius: 8px;
   transition: background-color 0.3s ease-in;
 }
 
-.menu-item--styled:hover {
+.menu-primary-container .menu-item--styled:hover {
   background-color: var(--cl-bg-main);
 }
 
-.menu-item--styled:active {
+.menu-primary-container .menu-item--styled:active {
   background-color: var(--cl-bg-button);
 }
 
