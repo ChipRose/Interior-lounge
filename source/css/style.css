@@ -25,6 +25,7 @@
   --cl-brown-dark: rgb(104, 76, 5);
   --cl-brown-middle: rgb(133, 97, 3);
   --cl-brown-light: rgb(159, 115, 3);
+  --cl-bg-button: rgb(255, 247, 227);
   --cl-bg-main: rgb(255, 253, 248);
   --cl-bg-accent: rgb(255, 255, 255);
   --cl-bg-form: rgb(244, 239, 226);
@@ -137,6 +138,20 @@ body {
 
 .menu-primary-container .menu-item-has-children:hover .sub-menu {
   display: block;
+}
+
+.menu-item--styled {
+  border: 1px solid var(--cl-brown-light);
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in;
+}
+
+.menu-item--styled:hover {
+  background-color: var(--cl-bg-main);
+}
+
+.menu-item--styled:active {
+  background-color: var(--cl-bg-button);
 }
 
 /* Sub menu */
